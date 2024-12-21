@@ -17,12 +17,13 @@ def next_date(date_string):
 
   # Convert the datetime object to string, 
   # in the format of "yyyy-mm-dd"
-  next_date_string = next_date_obj.strftime("yyyy-mm-dd")
+  next_date_string = next_date_obj.strftime("%Y-%m-%d")
   return next_date_string
 
 today = date.today()  # Get today's date
 print(next_date(str(today))) 
 # Should return a year from today, unless today is Leap Day
 
-#print(next_date("2021-01-01")) # Should return 2022-01-01
-#print(next_date("2020-02-29")) # Should return 2024-02-29
+print(next_date("2021-01-01")) # Should return 2022-01-01
+print(next_date("2020-02-29")) # Should return 2024-02-29
+
